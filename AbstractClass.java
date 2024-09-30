@@ -24,6 +24,12 @@ abstract class AbstractClass implements Interfacer{
     public String multiply(int a, int b){
       return "its multiply from interface implemented by abstract class "+ a*b;
     }
+    
+    //overriding default method for interface in abstract class
+    @Override
+    public void defaultPrinter(String value){
+        System.out.println("this is from default method defined interface and is called "+ value);
+    }
 
     abstract void hello(String value);
 

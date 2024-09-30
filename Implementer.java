@@ -24,7 +24,7 @@ public class Implementer implements Interfacer{
                 Interfacer.super.defaultPrinter(value);
             }
 
-
+            //implement the abstaract method in interface
             @Override
             public String multiply(int a, int b){
               return "its multiply from interface "+ a+b;
