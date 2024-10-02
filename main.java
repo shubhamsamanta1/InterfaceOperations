@@ -118,5 +118,31 @@ public class main {
 
         String[] Arr = {"a", "ab", "abc", "abcd"};
         Arrays.stream(Arr).forEach((arr)-> System.out.println("value "+arr));
+
+
+
+        AnonymousClass anonymousClass = new AnonymousClass() {
+            @Override
+            public void displayAnonymous(){
+                System.out.println("I am display demonstrating the anonymous interface abstract method");
+            }
+
+            @Override
+            public void display(){
+                System.out.println("I am display demonstrating the anonymous interface default method");
+            }
+
+            // @Override
+            // public void sdisplay(){     - wont work becaus of static method 
+
+            // }
+
+
+        };
+
+        anonymousClass.displayAnonymous();
+        anonymousClass.display();
+
+        AnonymousClass.sdisplay();
     }
 }
